@@ -329,7 +329,7 @@ download_curl() {
 download_wget() {
 	wget_output="${2:--}"
 
-	wget --no-verbose -O "$wget_output" "$1"
+	wget -O "$wget_output" "$1"
 }
 
 # download_fetch uses fetch(1) to download a file.  The first argument is the
